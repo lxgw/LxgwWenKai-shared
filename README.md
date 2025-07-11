@@ -5,10 +5,10 @@ This repo is a submodule that contains shared source files and scripts for LXGW 
 
 ## Folder descriptions / 文件夹说明
 
-- `lite` : The source files of [LXGW WenKai Lite](https://github.com/lxgw/LxgwWenKai-Lite). The full edition [LXGW WenKai](https://github.com/lxgw/LxgwWenKai) depends on these source files.   
-[《霞鹜文楷 轻便版》](https://github.com/lxgw/LxgwWenKai-Lite)源文件。完整版[《霞鹜文楷》](https://github.com/lxgw/LxgwWenKai)依赖这些源文件。
-- `gblite`: The source files of [LXGW WenKai GB Lite](https://github.com/lxgw/LxgwWenKaiGB-Lite). The full edition [LXGW WenKai GB](https://github.com/lxgw/LxgwWenKaiGB) depends on these source files.  
-[《霞鹜文楷 GB 轻便版》](https://github.com/lxgw/LxgwWenKaiGB-Lite)源文件。完整版[《霞鹜文楷 GB》](https://github.com/lxgw/LxgwWenKaiGB)依赖这些源文件。
+- `lite` : The source files of [LXGW WenKai Lite](https://github.com/lxgw/LxgwWenKai-Lite). The full edition [LXGW WenKai](https://github.com/lxgw/LxgwWenKai) also depends on these source files.   
+[《霞鹜文楷 轻便版》](https://github.com/lxgw/LxgwWenKai-Lite)源文件。完整版[《霞鹜文楷》](https://github.com/lxgw/LxgwWenKai)也依赖这些源文件。
+- `gblite`: The source files of [LXGW WenKai GB Lite](https://github.com/lxgw/LxgwWenKaiGB-Lite). The full edition [LXGW WenKai GB](https://github.com/lxgw/LxgwWenKaiGB) also depends on these source files.  
+[《霞鹜文楷 GB 轻便版》](https://github.com/lxgw/LxgwWenKaiGB-Lite)源文件。完整版[《霞鹜文楷 GB》](https://github.com/lxgw/LxgwWenKaiGB)也依赖这些源文件。
 - `monolgc`: Glyphs from LXGW WenKai Mono that differ from the proportional version.  
 《霞鹜文楷等宽》中与非等宽版有差异的字形。
 - `fulldiff`: The difference part between LXGW WenKai and its Lite edition.  
