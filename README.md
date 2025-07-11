@@ -1,5 +1,4 @@
-# LXGW WenKai Shared Submodule
-《霞鹜文楷》系列字体共用子模块
+# LXGW WenKai Shared Submodule</br>《霞鹜文楷》系列字体共用子模块
 
 This repo is a submodule that contains shared source files and scripts for LXGW WenKai font series.  
 本 repo 为子模块，包含《霞鹜文楷》系列字体共用的源文件和脚本。
