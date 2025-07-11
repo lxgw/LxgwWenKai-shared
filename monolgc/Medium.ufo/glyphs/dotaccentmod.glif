@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dotaccentmod" format="2">
+  <advance width="500" height="1000"/>
+  <unicode hex="02D9"/>
+  <outline>
+    <contour>
+      <point x="271" y="704"/>
+      <point x="305" y="660"/>
+      <point x="305" y="615"/>
+      <point x="276" y="584"/>
+      <point x="228" y="584"/>
+      <point x="194" y="627"/>
+      <point x="194" y="672"/>
+      <point x="222" y="704"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.verticalOrigin</key>
+      <integer>880</integer>
+    </dict>
+  </lib>
+</glyph>

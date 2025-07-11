@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="u02CA" format="2">
+  <advance width="500" height="1000"/>
+  <unicode hex="02CA"/>
+  <outline>
+    <contour>
+      <point x="159" y="580" type="qcurve"/>
+      <point x="152" y="580"/>
+      <point x="142" y="590"/>
+      <point x="142" y="597" type="qcurve"/>
+      <point x="142" y="619"/>
+      <point x="292" y="718" type="qcurve"/>
+      <point x="294" y="719"/>
+      <point x="298" y="719" type="qcurve"/>
+      <point x="308" y="719"/>
+      <point x="334" y="700"/>
+      <point x="357" y="676"/>
+      <point x="357" y="665" type="qcurve"/>
+      <point x="357" y="658"/>
+      <point x="350" y="655" type="qcurve"/>
+      <point x="301" y="637"/>
+      <point x="204" y="603"/>
+      <point x="170" y="583" type="qcurve"/>
+      <point x="164" y="580"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0.4,0.4,1</string>
+      <key>public.verticalOrigin</key>
+      <integer>880</integer>
+    </dict>
+  </lib>
+</glyph>
