@@ -1,0 +1,6 @@
+; Original Font's Type Foundry
+Fontworks Inc. (present Monotype KK) (https://github.com/fontworks-fonts)
+; Original Designer
+Francis Chow
+; Derivative Developer
+LXGW (https://github.com/lxgw)
