@@ -640,6 +640,8 @@ lookup u5355u5B57u5F62u66FFu63623 {
     sub oldchineseiterationmod-han by oldchineseiterationmod-han.vert;
     sub u16FF2 by u16FF2.vert;
     sub u16FF3 by u16FF3.vert;
+    sub kosmallhira by kosmallhira.vert;
+    sub kosmallkata by kosmallkata.vert;
 } u5355u5B57u5F62u66FFu63623;
 
 lookup u5355u5B57u5F62u8C03u65741 {
