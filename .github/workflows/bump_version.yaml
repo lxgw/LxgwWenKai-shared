@@ -1,0 +1,82 @@
+name: Bump fontinfo version
+# 远程遥控其他仓库更新 fontinfo 版本号
+# 需要 PAT 以触发工作流程，在 Settings > Secrets 中添加 MAIN_REPO_PAT
+# PAT 权限需要包含 write contents
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "版本号，格式vX.XXX"
+        required: true
+        type: string
+      release_date:
+        description: "版本日期，格式MONTH dd, YYYY。若空置将默认使用 UTC+8/上海当前的日期。"
+        type: string
+
+      std:
+        description: '原版'
+        type: boolean
+        default: true
+      lite:
+        description: 'Lite'
+        type: boolean
+        default: true
+      gb:
+        description: 'GB'
+        type: boolean
+        default: true
+      gb_lite:
+        description: 'GB Lite'
+        type: boolean
+        default: true
+
+jobs:
+  bump_version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Convert selection to array
+        id: convert_selection
+        run: |
+          # Convert the inputs to an array
+          selection=()
+          if [ ${{ inputs.std }} == true ]; then
+            selection+=("LxgwWenKai")
+          fi
+          if [ ${{ inputs.lite }} == true ]; then
+            selection+=("LxgwWenKai-Lite")
+          fi
+          if [ ${{ inputs.gb }} == true ]; then
+            selection+=("LxgwWenKaiGB")
+          fi
+          if [ ${{ inputs.gb_lite }} == true ]; then
+            selection+=("LxgwWenKaiGB-Lite")
+          fi
+
+          # Save the array as a JSON string to github env
+          selection_json=$(printf '%s\n' "${selection[@]}" | jq -R . | jq -s -c .)
+          echo "selection_json=${selection_json}" >> $GITHUB_ENV
+
+      - name: Trigger workflow in other repos
+        run: |
+          # Set the required variables
+          repo_owner="lxgw"
+          readarray -t repo_names < <(echo "$selection_json" | jq -r '.[]')
+          event_type="bump_version"
+
+          for repo_name in "${repo_names[@]}"; do
+            echo "Bumping version for $repo_name"
+            curl -L \
+              -X POST \
+              -H "Accept: application/vnd.github+json" \
+              -H "Authorization: Bearer ${{ secrets.MAIN_REPO_PAT }}" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              https://api.github.com/repos/$repo_owner/$repo_name/dispatches \
+              -d '{
+                "event_type": "'"$event_type"'",
+                "client_payload": {
+                  "version": "${{ github.event.inputs.version }}",
+                  "release_date": "${{ github.event.inputs.release_date }}"
+                }
+              }'
+          done
