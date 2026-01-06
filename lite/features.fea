@@ -936,35 +936,56 @@ lookup SingleAdjustment3 {
     pos katakanahiraganasemivoicedsoundmarkcomb <500 1000 0 -1000>;
 } SingleAdjustment3;
 
+# /***** CHWS *****/
+
+@LEFT_QUOTES = [quoteleft.full quotedblleft.full];
+@RIGHT_QUOTES = [quoteright.full quotedblright.full];
+
+@RIGHT_BRACKETS  = [righttortoiseshellbracket rightpointinganglebracket rightdoubleanglebracket rightcornerbracket rightwhitecornerbracket rightwhitelenticularbracket rightblacklenticularbracket doubleprimequotation fullwidthparenright fullwidthrightsquarebracket fullwidthrightcurlybracket];
+@LEFT_BRACKETS = [lefttortoiseshellbracket leftpointinganglebracket leftdoubleanglebracket leftcornerbracket leftwhitecornerbracket leftwhitelenticularbracket leftblacklenticularbracket reverseddoubleprimequotation fullwidthparenleft fullwidthleftsquarebracket fullwidthleftcurlybracket];
+
+@RIGHT_BRACKETS_WITH_QUOTES  = [@RIGHT_BRACKETS @RIGHT_QUOTES];
+@LEFT_BRACKETS_WITH_QUOTES  = [@LEFT_BRACKETS @LEFT_QUOTES];
+
+@BOTTOM_LEFT_POINT_PUNC = [ideographiccomma ideographicfullstop fullwidthcomma fullwidthfullstop];
+@LEFT_FULL_HEIGHT_PUNC = [fullwidthcolon fullwidthsemicolon fullwidthexclamationmark fullwidthquestionmark];
+
+
 lookup PairAdjustment1 {
-    pos [ideographiccomma ideographicfullstop fullwidthcomma fullwidthfullstop] [righttortoiseshellbracket rightpointinganglebracket rightdoubleanglebracket rightcornerbracket rightwhitecornerbracket rightwhitelenticularbracket rightblacklenticularbracket doubleprimequotation fullwidthparenright fullwidthrightsquarebracket fullwidthrightcurlybracket quoteright.full quotedblright.full] -500;
-    pos [ideographiccomma ideographicfullstop fullwidthcomma fullwidthfullstop] [lefttortoiseshellbracket leftpointinganglebracket leftdoubleanglebracket leftcornerbracket leftwhitecornerbracket leftwhitelenticularbracket leftblacklenticularbracket reverseddoubleprimequotation fullwidthparenleft fullwidthleftsquarebracket fullwidthleftcurlybracket quoteleft.full quotedblleft.full] -600;
-    pos [righttortoiseshellbracket rightpointinganglebracket rightdoubleanglebracket rightcornerbracket rightwhitecornerbracket rightwhitelenticularbracket rightblacklenticularbracket doubleprimequotation fullwidthparenright fullwidthrightsquarebracket fullwidthrightcurlybracket] [lefttortoiseshellbracket leftpointinganglebracket leftdoubleanglebracket leftcornerbracket leftwhitecornerbracket leftwhitelenticularbracket leftblacklenticularbracket reverseddoubleprimequotation fullwidthparenleft fullwidthleftsquarebracket fullwidthleftcurlybracket] -600;
-    pos [quoteright.full quotedblright.full] [lefttortoiseshellbracket leftpointinganglebracket leftdoubleanglebracket leftcornerbracket leftwhitecornerbracket leftwhitelenticularbracket leftblacklenticularbracket reverseddoubleprimequotation fullwidthparenleft fullwidthleftsquarebracket fullwidthleftcurlybracket] -600;
-    pos [righttortoiseshellbracket rightpointinganglebracket rightdoubleanglebracket rightcornerbracket rightwhitecornerbracket rightwhitelenticularbracket rightblacklenticularbracket doubleprimequotation fullwidthparenright fullwidthrightsquarebracket fullwidthrightcurlybracket] [quoteleft.full quotedblleft.full] -600;
-    pos [lefttortoiseshellbracket leftpointinganglebracket leftdoubleanglebracket leftcornerbracket leftwhitecornerbracket leftwhitelenticularbracket leftblacklenticularbracket reverseddoubleprimequotation fullwidthparenleft fullwidthleftsquarebracket fullwidthleftcurlybracket] [lefttortoiseshellbracket leftpointinganglebracket leftdoubleanglebracket leftcornerbracket leftwhitecornerbracket leftwhitelenticularbracket leftblacklenticularbracket reverseddoubleprimequotation fullwidthparenleft fullwidthleftsquarebracket fullwidthleftcurlybracket quoteleft.full quotedblleft.full] -400;
-    pos [righttortoiseshellbracket rightpointinganglebracket rightdoubleanglebracket rightcornerbracket rightwhitecornerbracket rightwhitelenticularbracket rightblacklenticularbracket doubleprimequotation fullwidthparenright fullwidthrightsquarebracket fullwidthrightcurlybracket] [righttortoiseshellbracket rightpointinganglebracket rightdoubleanglebracket rightcornerbracket rightwhitecornerbracket rightwhitelenticularbracket rightblacklenticularbracket doubleprimequotation fullwidthparenright fullwidthrightsquarebracket fullwidthrightcurlybracket quoteright.full quotedblright.full] -400;
-    pos [quoteleft.full quotedblleft.full] [lefttortoiseshellbracket leftpointinganglebracket leftdoubleanglebracket leftcornerbracket leftwhitecornerbracket leftwhitelenticularbracket leftblacklenticularbracket reverseddoubleprimequotation fullwidthparenleft fullwidthleftsquarebracket fullwidthleftcurlybracket ] -400;
-    pos [quoteright.full quotedblright.full] [righttortoiseshellbracket rightpointinganglebracket rightdoubleanglebracket rightcornerbracket rightwhitecornerbracket rightwhitelenticularbracket rightblacklenticularbracket doubleprimequotation fullwidthparenright fullwidthrightsquarebracket fullwidthrightcurlybracket ] -400;
-    pos [righttortoiseshellbracket rightpointinganglebracket rightdoubleanglebracket rightcornerbracket rightwhitecornerbracket rightwhitelenticularbracket rightblacklenticularbracket doubleprimequotation fullwidthparenright fullwidthrightsquarebracket fullwidthrightcurlybracket] [ideographiccomma ideographicfullstop fullwidthcomma fullwidthfullstop] -500;
-    pos [quoteright.full quotedblright.full] [ideographiccomma ideographicfullstop fullwidthcomma fullwidthfullstop] -500;
-    pos [quoteright.full quotedblright.full] [quoteleft.full quotedblleft.full] -800;
-    pos [quoteleft.full quotedblleft.full] [quoteleft.full quotedblleft.full] -500;
-    pos [quoteright.full quotedblright.full] [quoteright.full quotedblright.full] -500;
+    pos @BOTTOM_LEFT_POINT_PUNC @RIGHT_BRACKETS_WITH_QUOTES -500;
+    pos @BOTTOM_LEFT_POINT_PUNC @LEFT_BRACKETS_WITH_QUOTES -600;
+
+    pos @LEFT_BRACKETS @LEFT_BRACKETS_WITH_QUOTES -400;
+    pos @LEFT_QUOTES @LEFT_BRACKETS -400;
+    pos @LEFT_QUOTES @LEFT_QUOTES -500;
+
+    pos @RIGHT_BRACKETS_WITH_QUOTES @BOTTOM_LEFT_POINT_PUNC -500;
+    pos @RIGHT_BRACKETS_WITH_QUOTES @LEFT_BRACKETS -600;
+    pos @RIGHT_BRACKETS @LEFT_QUOTES -600;
+    pos @RIGHT_BRACKETS @RIGHT_BRACKETS_WITH_QUOTES -400;
+    pos @RIGHT_QUOTES @RIGHT_BRACKETS -400;
+    pos @RIGHT_QUOTES @LEFT_QUOTES -800;
+    pos @RIGHT_QUOTES @RIGHT_QUOTES -500;
+
     pos fullwidthexclamationmark fullwidthexclamationmark -600;
     pos fullwidthexclamationmark fullwidthquestionmark -500;
     pos fullwidthquestionmark fullwidthexclamationmark -500;
     pos fullwidthquestionmark fullwidthquestionmark -400;
-    pos [righttortoiseshellbracket rightpointinganglebracket rightdoubleanglebracket rightcornerbracket rightwhitecornerbracket rightwhitelenticularbracket rightblacklenticularbracket doubleprimequotation fullwidthparenright fullwidthrightsquarebracket fullwidthrightcurlybracket quoteright.full quotedblright.full] [fullwidthcolon fullwidthsemicolon fullwidthexclamationmark fullwidthquestionmark] -500;
-    pos [fullwidthcolon fullwidthsemicolon fullwidthexclamationmark fullwidthquestionmark] [lefttortoiseshellbracket leftpointinganglebracket leftdoubleanglebracket leftcornerbracket leftwhitecornerbracket leftwhitelenticularbracket leftblacklenticularbracket reverseddoubleprimequotation fullwidthparenleft fullwidthleftsquarebracket fullwidthleftcurlybracket quoteleft.full quotedblleft.full] -600;
-    pos [fullwidthcolon fullwidthsemicolon fullwidthexclamationmark] [righttortoiseshellbracket rightpointinganglebracket rightdoubleanglebracket rightcornerbracket rightwhitecornerbracket rightwhitelenticularbracket rightblacklenticularbracket doubleprimequotation fullwidthparenright fullwidthrightsquarebracket fullwidthrightcurlybracket quoteright.full quotedblright.full] -500;
-    pos fullwidthquestionmark [righttortoiseshellbracket rightpointinganglebracket rightdoubleanglebracket rightcornerbracket rightwhitecornerbracket rightwhitelenticularbracket rightblacklenticularbracket doubleprimequotation fullwidthparenright fullwidthrightsquarebracket fullwidthrightcurlybracket quoteright.full quotedblright.full] -400;
+
+    pos @RIGHT_BRACKETS_WITH_QUOTES @LEFT_FULL_HEIGHT_PUNC -500;
+    pos @LEFT_FULL_HEIGHT_PUNC @LEFT_BRACKETS_WITH_QUOTES -600;
+    pos [fullwidthcolon fullwidthsemicolon fullwidthexclamationmark] @RIGHT_BRACKETS_WITH_QUOTES -500;
+    pos fullwidthquestionmark @RIGHT_BRACKETS_WITH_QUOTES -400;
 } PairAdjustment1;
 
 lookup ChainedContextualGPOS1 {
-    pos  [righttortoiseshellbracket rightpointinganglebracket rightdoubleanglebracket rightcornerbracket rightwhitecornerbracket rightwhitelenticularbracket rightblacklenticularbracket doubleprimequotation fullwidthparenright fullwidthrightsquarebracket fullwidthrightcurlybracket quoteright.full quotedblright.full]' 50 [fullwidthcolon fullwidthsemicolon fullwidthexclamationmark fullwidthquestionmark]' -250 [lefttortoiseshellbracket leftpointinganglebracket leftdoubleanglebracket leftcornerbracket leftwhitecornerbracket leftwhitelenticularbracket leftblacklenticularbracket reverseddoubleprimequotation fullwidthparenleft fullwidthleftsquarebracket fullwidthleftcurlybracket quoteleft.full quotedblleft.full] ;
-    pos  [righttortoiseshellbracket rightpointinganglebracket rightdoubleanglebracket rightcornerbracket rightwhitecornerbracket rightwhitelenticularbracket rightblacklenticularbracket doubleprimequotation fullwidthparenright fullwidthrightsquarebracket fullwidthrightcurlybracket quoteright.full quotedblright.full]' -50 [ideographiccomma ideographicfullstop fullwidthcomma fullwidthfullstop]' -50 [lefttortoiseshellbracket leftpointinganglebracket leftdoubleanglebracket leftcornerbracket leftwhitecornerbracket leftwhitelenticularbracket leftblacklenticularbracket reverseddoubleprimequotation fullwidthparenleft fullwidthleftsquarebracket fullwidthleftcurlybracket quoteleft.full quotedblleft.full] ;
+    pos  @RIGHT_BRACKETS_WITH_QUOTES' 50 @LEFT_FULL_HEIGHT_PUNC' -250 @LEFT_BRACKETS_WITH_QUOTES ;
+    pos  @RIGHT_BRACKETS_WITH_QUOTES' -50 @BOTTOM_LEFT_POINT_PUNC' -50 @LEFT_BRACKETS_WITH_QUOTES ;
 } ChainedContextualGPOS1;
+
+# /***** CHWS END *****/
+
+# /***** VCHW *****/
 
 lookup PairAdjustment2 {
     pos [presentationformforverticalcomma presentationformforverticalideographicfullstop presentationformforverticalideographiccomma period.full.vert] [presentationformforverticalleftwhitelenticularbracket presentationformforverticalparenleft presentationformforverticallefttortoiseshellbracket presentationformforverticalleftanglebracket presentationformforverticalleftdoubleanglebracket presentationformforverticalleftcornerbracket presentationformforverticalleftwhitecornerbracket presentationformforverticalleftblacklenticularbracket presentationformforverticalleftcurlybracket presentationformforverticalleftsquarebracket] <0 0 0 -800>;
@@ -981,6 +1002,8 @@ lookup ChainedContextualGPOS2 {
     pos [presentationformforverticalrightwhitelenticularbrakcet presentationformforverticalparenright presentationformforverticalrighttortoiseshellbracket presentationformforverticalrightanglebracket presentationformforverticalrightdoubleanglebracket presentationformforverticalrightcornerbracket presentationformforverticalrightwhitecornerbracket presentationformforverticalrightblacklenticularbracket presentationformforverticalrightcurlybracket presentationformforverticalrightsquarebracket] ' <0 0 0 -10> [presentationformforverticalcomma presentationformforverticalideographicfullstop presentationformforverticalideographiccomma period.full.vert]' <0 0 0 -10> [presentationformforverticalleftwhitelenticularbracket presentationformforverticalparenleft presentationformforverticallefttortoiseshellbracket presentationformforverticalleftanglebracket presentationformforverticalleftdoubleanglebracket presentationformforverticalleftcornerbracket presentationformforverticalleftwhitecornerbracket presentationformforverticalleftblacklenticularbracket presentationformforverticalleftcurlybracket presentationformforverticalleftsquarebracket];
     pos [presentationformforverticalrightwhitelenticularbrakcet presentationformforverticalparenright presentationformforverticalrighttortoiseshellbracket presentationformforverticalrightanglebracket presentationformforverticalrightdoubleanglebracket presentationformforverticalrightcornerbracket presentationformforverticalrightwhitecornerbracket presentationformforverticalrightblacklenticularbracket presentationformforverticalrightcurlybracket presentationformforverticalrightsquarebracket] ' <0 0 0 -10> [presentationformforverticalcolon presentationformforverticalsemicolon presentationformforverticalexclamationmark presentationformforverticalquestionmark]' <0 0 0 -10> [presentationformforverticalleftwhitelenticularbracket presentationformforverticalparenleft presentationformforverticallefttortoiseshellbracket presentationformforverticalleftanglebracket presentationformforverticalleftdoubleanglebracket presentationformforverticalleftcornerbracket presentationformforverticalleftwhitecornerbracket presentationformforverticalleftblacklenticularbracket presentationformforverticalleftcurlybracket presentationformforverticalleftsquarebracket];
 } ChainedContextualGPOS2;
+
+# /***** VCHW END *****/
 
 #
 # Feature definitions
