@@ -693,6 +693,14 @@ lookup LigatureSubstitution3 {
     sub C circumflexcomb by Ccircumflex;  
     sub S circumflexcomb by Scircumflex;  
     sub Z circumflexcomb by Zcircumflex;
+    sub Eng macroncomb by Eng_macroncomb;
+    sub eng macroncomb by eng_macroncomb;
+    sub Eng acutecomb by Eng_acutecomb;
+    sub eng acutecomb by eng_acutecomb;
+    sub Eng caroncomb by Eng_caroncomb;
+    sub eng caroncomb by eng_caroncomb;
+    sub Eng gravecomb by Eng_gravecomb;
+    sub eng gravecomb by eng_gravecomb;
 } LigatureSubstitution3;
 
 lookup SingleSubstitution5 {
