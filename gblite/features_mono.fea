@@ -973,4 +973,6 @@ feature fwid {
         sub Euro by Euro.full;
         sub section by section.full;
         sub radical by radical.full;
+        sub naryproduct by product.full;
+        sub narysummation by summation.full;
 } ccmp;
