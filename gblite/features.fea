@@ -1169,4 +1169,4 @@ feature fwid {
         sub radical by radical.full;
         sub naryproduct by product.full;
         sub narysummation by summation.full;
-} ccmp;
+} fwid;
