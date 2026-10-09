@@ -983,3 +983,20 @@ feature ccmp {
         lookup ChainedContextualGSUB2;
 } ccmp;
 
+feature fwid {
+    # script DFLT;
+        sub quotedblleft by quotedblleft.full;
+        sub quotedblright by quotedblright.full;
+        sub quoteleft by quoteleft.full;
+        sub quoteright by quoteright.full;
+        sub periodcentered by katakanamiddledot;
+        sub multiply by multiply.full;
+        sub divide by divide.full;
+        sub plusminus by plusminus.full;
+        sub degree by degree.full;
+        sub minute by minute.full;
+        sub second by second.full;
+        sub Euro by Euro.full;
+        sub section by section.full;
+        sub radical by radical.full;
+} ccmp;
