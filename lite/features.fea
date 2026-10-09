@@ -1301,9 +1301,9 @@ feature fwid {
         sub degree by degree.full;
         sub minute by minute.full;
         sub second by second.full;
-        sub Euro by Euro.full;
+        sub euro by Euro.full;
         sub section by section.full;
-        sub radical by radical.full;
+        sub squareroot by radical.full;
         sub naryproduct by product.full;
         sub narysummation by summation.full;
 } fwid;
