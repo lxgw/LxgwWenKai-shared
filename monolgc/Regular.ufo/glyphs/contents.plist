@@ -2868,6 +2868,8 @@
     <string>registered.glif</string>
     <key>retroflexclick</key>
     <string>retroflexclick.glif</string>
+    <key>reversedprime</key>
+    <string>reversedprime.glif</string>
     <key>reverseddoubleprime</key>
     <string>reverseddoubleprime.glif</string>
     <key>reversedlunateepsilonsymbol-greek</key>
