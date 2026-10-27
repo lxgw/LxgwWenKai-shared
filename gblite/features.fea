@@ -833,8 +833,8 @@ lookup PairAdjustment1 {
 
     pos fullwidthquestionmark @RIGHT_BRACKETS -400;
     pos fullwidthquestionmark @RIGHT_QUOTES  -400;
-    pos fullwidthquestionmark <0 0 -444 0> @LEFT_BRACKETS <-156 0 -156 0>;
-    pos fullwidthquestionmark <0 0 -444 0> @LEFT_QUOTES   <-156 0 -156 0>;
+    pos fullwidthquestionmark @LEFT_BRACKETS -600;
+    pos fullwidthquestionmark @LEFT_QUOTES  -600;
     pos [fullwidthcolon fullwidthsemicolon fullwidthexclamationmark] @RIGHT_BRACKETS -500;
     pos [fullwidthcolon fullwidthsemicolon fullwidthexclamationmark] @RIGHT_QUOTES -500;
     pos [fullwidthcolon fullwidthsemicolon fullwidthexclamationmark] @LEFT_BRACKETS -600;
