@@ -3826,5 +3826,7 @@
     <string>eng_gravecomb.glif</string>
     <key>eng_macroncomb</key>
     <string>eng_macroncomb.glif</string>
+    <key>reversednotsign</key>
+    <string>reversednotsign.glif</string>
   </dict>
 </plist>
