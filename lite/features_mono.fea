@@ -35,6 +35,16 @@ languagesystem bopo dflt;
 
 lookup SingleSubstitution4 {
     sub colon by colon.time;
+    sub plus by plus.calt;
+    sub hyphenminus by hyphenminus.calt;
+    sub less by less.calt;
+    sub equal by equal.calt;
+    sub greater by greater.calt;
+    sub asciitilde by asciitilde.calt;
+    sub plusminus by plusminus.calt;
+    sub multiply by multiply.calt;
+    sub divide by divide.calt;
+    sub minus by minus.calt;
 } SingleSubstitution4;
 
 # lookup LigatureSubstitution2 {
@@ -1001,6 +1011,9 @@ feature fwid {
         sub squareroot by radical.full;
         sub naryproduct by product.full;
         sub narysummation by summation.full;
+        sub multiply.calt by multiply.full;
+        sub divide.calt by divide.full;
+        sub plusminus.calt by plusminus.full;
 } fwid;
 
 feature hwid {
