@@ -28,6 +28,7 @@ languagesystem bopo dflt;
 #
 
 @CG_1 = [zero one two three four five six seven eight nine];
+@CG_2 = [colon plus hyphenminus less equal greater asciitilde plusminus multiply divide minus];
 
 #
 # Global lookup definitions
@@ -35,6 +36,16 @@ languagesystem bopo dflt;
 
 lookup SingleSubstitution4 {
     sub colon by colon.time;
+    sub plus by plus.calt;
+    sub hyphenminus by hyphenminus.calt;
+    sub less by less.calt;
+    sub equal by equal.calt;
+    sub greater by greater.calt;
+    sub asciitilde by asciitilde.calt;
+    sub plusminus by plusminus.calt;
+    sub multiply by multiply.calt;
+    sub divide by divide.calt;
+    sub minus by minus.calt;
 } SingleSubstitution4;
 
 lookup LigatureSubstitution2 {
@@ -1112,7 +1123,7 @@ feature vert {
 
 feature calt {
     # script DFLT;
-    sub @CG_1 colon' lookup SingleSubstitution4 @CG_1;
+    sub @CG_1 @CG_2' lookup SingleSubstitution4 @CG_1;
 } calt;
 
 feature salt {
