@@ -1181,3 +1181,15 @@ feature fwid {
         sub naryproduct by product.full;
         sub narysummation by summation.full;
 } fwid;
+
+feature cpct {
+    # script DFLT;
+        sub fullwidthcomma by smallcomma;
+        sub ideographiccomma by smallideographiccomma;
+        sub fullwidthfullstop by smallfullstop;
+        sub fullwidthsemicolon by smallsemicolon;
+        sub fullwidthcolon by smallcolon;
+        sub fullwidthquestionmark by smallquestionmark;
+        sub fullwidthexclamationmark by smallexclamationmark;
+        sub ideographicfullstop by ideographicfullstop.1;
+} cpct;

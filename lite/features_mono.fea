@@ -1017,6 +1017,18 @@ feature fwid {
         sub plusminus.calt by plusminus.full;
 } fwid;
 
+feature cpct {
+    # script DFLT;
+        sub fullwidthcomma by smallcomma;
+        sub ideographiccomma by smallideographiccomma;
+        sub fullwidthfullstop by smallfullstop;
+        sub fullwidthsemicolon by smallsemicolon;
+        sub fullwidthcolon by smallcolon;
+        sub fullwidthquestionmark by smallquestionmark;
+        sub fullwidthexclamationmark by smallexclamationmark;
+        sub ideographicfullstop by ideographicfullstop.1;
+} cpct;
+
 feature hwid {
     # script DFLT;
         sub onequarter by onequarter.half;
