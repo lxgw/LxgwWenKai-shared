@@ -4032,5 +4032,7 @@
     <string>plus.calt.glif</string>
     <key>plusminus.calt</key>
     <string>plusminus.calt.glif</string>
+    <key>triangularbullet</key>
+    <string>triangularbullet.glif</string> 
   </dict>
 </plist>
